@@ -9,8 +9,6 @@ class GroundStation:
         self.altitude = altitude
 
     def distance_to_satellite(self, sat_latitude, sat_longitude, sat_altitude):
-        # Calculate the distance between the ground station and the satellite
-        # using a simple spherical Earth model
         R = 6371  # Earth's radius (km)
 
         lat1 = math.radians(self.latitude)
